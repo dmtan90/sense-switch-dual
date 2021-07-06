@@ -1,0 +1,3 @@
+Run “make” to compile the new version of the application, but don’t run “make flash” as this would replace the factory version.
+Go to the tools directory and execute the “update_firmware.py” script. The script takes two parameters, the IP address of the target and a path to the bin file of the application. On my machine, the command looks as follows:
+$ python update_firmware.py 192.168.33.52 ../build/esp32-ota-demo.bin

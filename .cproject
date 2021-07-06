@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.cross.base.1325887211">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.cross.base.1325887211" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="cdt.managedbuild.toolchain.gnu.cross.base.1325887211" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.cross.base.1325887211.260801977" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.base.1619422957" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.base">
+							<option id="cdt.managedbuild.option.gnu.cross.prefix.139219980" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix"/>
+							<option id="cdt.managedbuild.option.gnu.cross.path.472239888" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1392740998" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder arguments="${IDF_PATH}/tools/windows/eclipse_make.py" command="python" id="cdt.managedbuild.builder.gnu.cross.990337801" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.1639600229" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.2083461986" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1008068320" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.48651358" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.preprocessor.def.812612664" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CS_PLATFORM=CS_P_ESP32"/>
+									<listOptionValue builtIn="false" value="RTOS_SDK=1"/>
+									<listOptionValue builtIn="false" value="&quot;LWS_WITH_ESP32 =1&quot;"/>
+									<listOptionValue builtIn="false" value="OPENSSL_NO_EC=1"/>
+									<listOptionValue builtIn="false" value="MG_ENABLE_HTTP_STREAMING_MULTIPART=1"/>
+									<listOptionValue builtIn="false" value="LWIP_COMPAT_SOCKETS=2"/>
+									<listOptionValue builtIn="false" value="LWIP_DNS=1"/>
+									<listOptionValue builtIn="false" value="LWIP_SOCKET=1"/>
+									<listOptionValue builtIn="false" value="MG_ENABLE_SSL=0"/>
+									<listOptionValue builtIn="false" value="MG_DISABLE_PFS=1"/>
+									<listOptionValue builtIn="false" value="MG_SSL_IF=0"/>
+									<listOptionValue builtIn="false" value="SO_REUSE_RXTOALL=1"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.include.paths.680895389" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Sense_Hub_1.0/build/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/fatfs/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/esp32/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/freertos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/driver/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/openssl/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/log/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/newlib/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/lwip/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/vfs/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/nvs_flash/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/app_update/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/spi_flash/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/lwip/include/lwip/lwip}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/lwip/include/lwip/posix}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/lwip/include/lwip}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/mbedtls/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/bt/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/bt/bluedroid/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/bt/bluedroid/api/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/bt/bluedroid/bta/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/components-master/tcpip_adapter/include}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1081615130" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.802475091" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.394074267" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1211772687" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.742146342" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.1706149864" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.660786936" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1159467368" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.cross.base.1325887211.346481523" name="/" resourcePath="components">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.base.855566343" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.base" unusedChildren="">
+							<option id="cdt.managedbuild.option.gnu.cross.prefix.139219980.507449619" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix.139219980"/>
+							<option id="cdt.managedbuild.option.gnu.cross.path.472239888.1067411058" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path.472239888"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.127520028" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler.1639600229">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1987372041" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1649384740" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler.48651358">
+								<option id="gnu.cpp.compiler.option.preprocessor.def.302069612" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CS_PLATFORM=CS_P_ESP32"/>
+									<listOptionValue builtIn="false" value="RTOS_SDK=1"/>
+									<listOptionValue builtIn="false" value="&quot;LWS_WITH_ESP32 =1&quot;"/>
+									<listOptionValue builtIn="false" value="OPENSSL_NO_EC=1"/>
+									<listOptionValue builtIn="false" value="MG_ENABLE_HTTP_STREAMING_MULTIPART=1"/>
+									<listOptionValue builtIn="false" value="LWIP_COMPAT_SOCKETS=2"/>
+									<listOptionValue builtIn="false" value="LWIP_DNS=1"/>
+									<listOptionValue builtIn="false" value="LWIP_SOCKET=1"/>
+									<listOptionValue builtIn="false" value="MG_ENABLE_SSL=0"/>
+									<listOptionValue builtIn="false" value="MG_DISABLE_PFS=1"/>
+									<listOptionValue builtIn="false" value="MG_SSL_IF=0"/>
+									<listOptionValue builtIn="false" value="SO_REUSE_RXTOALL=1"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.817680627" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.859782863" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker.802475091"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.126136863" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker.394074267"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.924632066" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver.742146342"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.1528489347" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler.1706149864">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.274817812" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="Sense Hub 1.0.null.683713998" name="Sense Hub 1.0"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/Sense_Hub_1.0"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.cross.base.1325887211;cdt.managedbuild.toolchain.gnu.cross.base.1325887211.260801977;cdt.managedbuild.tool.gnu.cross.cpp.compiler.48651358;cdt.managedbuild.tool.gnu.cpp.compiler.input.1081615130">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.cross.base.1325887211;cdt.managedbuild.toolchain.gnu.cross.base.1325887211.260801977;cdt.managedbuild.tool.gnu.cross.c.compiler.1639600229;cdt.managedbuild.tool.gnu.c.compiler.input.1008068320">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.2007761135">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
+		<buildTargets>
+			<target name="all" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments>${IDF_PATH}/tools/windows/eclipse_make.py</buildArguments>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="flash" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>python</buildCommand>
+				<buildArguments>${IDF_PATH}/tools/windows/eclipse_make.py</buildArguments>
+				<buildTarget>flash</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="erase_flash" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>python</buildCommand>
+				<buildArguments>${IDF_PATH}/tools/windows/eclipse_make.py</buildArguments>
+				<buildTarget>erase_flash</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>python</buildCommand>
+				<buildArguments>${IDF_PATH}/tools/windows/eclipse_make.py</buildArguments>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+		</buildTargets>
+	</storageModule>
+</cproject>
